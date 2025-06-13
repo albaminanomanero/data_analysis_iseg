@@ -1,0 +1,13 @@
+name: r-env2
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-irkernel
+  - r-tidyverse
+  - r-essentials
+  - notebook
+  - jupyterlab
+  - ipykernel
+  - r-readr
+  - r-readxl
