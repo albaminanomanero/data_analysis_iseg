@@ -1,4 +1,4 @@
-name: r-env2
+name: data_analysis_iseg
 channels:
   - conda-forge
 dependencies:
