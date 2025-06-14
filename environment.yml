@@ -11,4 +11,8 @@ dependencies:
   - ipykernel
   - r-readr
   - r-readxl
+  - ipywidgets
+  - r-readr
+  - r-readxl
+  - r-repr
   - lckr_jupyterlab_variableinspector
