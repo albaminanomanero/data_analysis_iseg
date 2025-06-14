@@ -14,4 +14,4 @@ Rscript -e "install.packages('IRkernel', repos='https://cloud.r-project.org')"
 Rscript -e "IRkernel::installspec(user = FALSE)"
 
 # Enable nbgitpuller
-jupyter serverextension enable --py nbgitpuller --sys-prefix
+jupyter server extension enable --sys-prefix nbgitpuller
