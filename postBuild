@@ -4,14 +4,5 @@ set -ex
 # Install Jupyter and Python manually (needed for nbgitpuller)
 pip install --upgrade pip
 pip install nbgitpuller
-jupyter serverextension enable --py nbgitpuller --sys-prefix
-
-
-# Install R packages (optional if using install.R instead)
-Rscript -e "install.packages('readr', repos='https://cloud.r-project.org')"
-Rscript -e "install.packages('tidyverse', repos='https://cloud.r-project.org')"
-Rscript -e "install.packages('IRkernel', repos='https://cloud.r-project.org')"
-Rscript -e "IRkernel::installspec(user = FALSE)"
-
 # Enable nbgitpuller
 jupyter server extension enable --sys-prefix nbgitpuller
