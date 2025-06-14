@@ -2,9 +2,10 @@
 set -ex
 
 # Install Jupyter and Python manually (needed for nbgitpuller)
-apt-get update
-apt-get install -y python3-pip
-pip3 install notebook jupyterlab nbgitpuller
+pip install --upgrade pip
+pip install nbgitpuller
+jupyter serverextension enable --py nbgitpuller --sys-prefix
+
 
 # Install R packages (optional if using install.R instead)
 Rscript -e "install.packages('readr', repos='https://cloud.r-project.org')"
