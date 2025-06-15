@@ -6,5 +6,9 @@ pip install --upgrade pip
 pip install nbgitpuller
 pip install lckr_jupyterlab_variableinspector
 pip install ipywidgets
+pip install jupyter_contrib_nbextensions
+
 # Enable nbgitpuller
 jupyter server extension enable --sys-prefix nbgitpuller
+jupyter contrib nbextension install --user
+jupyter nbextension enable varInspector/main
