@@ -1,24 +1,15 @@
 #!/bin/bash
 set -ex
 
-# Upgrade pip just in case
 pip install --upgrade pip
-
-# Install nbgitpuller to sync with other GitHub repos
 pip install nbgitpuller
-
-# Install Jupyter Notebook extensions
-pip install jupyter_contrib_nbextensions
-
-# Install and enable nbextensions for Jupyter Notebook
-jupyter contrib nbextension install --user
-
-# Enable Variable Inspector (only works in Notebook + Python)
-jupyter nbextension enable varInspector/main
-
-# Enable ipywidgets (commonly needed for nbextensions)
+pip install lckr_jupyterlab_variableinspector
 pip install ipywidgets
-jupyter nbextension enable widgetsnbextension --user
+pip install jupyter_contrib_nbextensions
+pip install variable_inspector
 
-# Enable nbgitpuller server extension
-jupyter serverextension enable --sys-prefix nbgitpuller || true
+
+# Enable nbgitpuller
+jupyter server extension enable --sys-prefix nbgitpuller
+jupyter contrib nbextension install --sys-prefix
+jupyter nbextension enable varInspector/main
