@@ -1,17 +1,14 @@
 #!/bin/bash
 set -ex
 
-# Upgrade pip and install Python tools
 pip install --upgrade pip
-
-# Install for both classic Jupyter Notebook and JupyterLab
-pip install nbgitpuller ipywidgets lckr_jupyterlab_variableinspector 
+pip install nbgitpuller
+pip install lckr_jupyterlab_variableinspector
+pip install ipywidgets
 pip install jupyter_contrib_nbextensions
 
-# Enable ipywidgets in classic notebook
+# Enable nbgitpuller
+jupyter server extension enable --sys-prefix nbgitpuller
+jupyter contrib nbextension install --user
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
-
-# Enable classic notebook extensions
-jupyter contrib nbextension install --sys-prefix
 jupyter nbextension enable varInspector/main
-
