@@ -11,5 +11,5 @@ pip install notebook==6.1.5
 
 # Enable nbgitpuller
 jupyter server extension enable --sys-prefix nbgitpuller
-jupyter contrib extension install --sys-prefix nbextension
+jupyter contrib nbextension install --sys-prefix 
 jupyter nbextension enable varInspector/main
