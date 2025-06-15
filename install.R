@@ -6,5 +6,9 @@ install.packages("readxl")
 install.packages("repr")
 install.packages("dplyr")
 install.packages("knitr")
-install.packages("psych)
+install.packages("psych")
 install.packages("clipr")
+install.packages("DescTools") 
+install.packages("ineq") 
+
+ 
