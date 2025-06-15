@@ -1,4 +1,5 @@
 install.packages("readr")
+install.packages("rlang", repos = "https://cloud.r-project.org")
 install.packages("tidyverse")
 install.packages("IRkernel")
 IRkernel::installspec()
@@ -11,5 +12,6 @@ install.packages("clipr")
 install.packages("DescTools") 
 install.packages("ineq") 
 install.packages("ggplot2")
+
 
  
