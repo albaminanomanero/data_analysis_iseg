@@ -5,7 +5,8 @@ set -ex
 pip install --upgrade pip
 
 # Install for both classic Jupyter Notebook and JupyterLab
-pip install nbgitpuller ipywidgets lckr_jupyterlab_variableinspector jupyter_contrib_nbextensions
+pip install nbgitpuller ipywidgets lckr_jupyterlab_variableinspector 
+pip install jupyter_contrib_nbextensions
 
 # Enable ipywidgets in classic notebook
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
@@ -14,6 +15,3 @@ jupyter nbextension enable --py widgetsnbextension --sys-prefix
 jupyter contrib nbextension install --sys-prefix
 jupyter nbextension enable varInspector/main
 
-# JupyterLab (v3+) auto-detects lab extensions if installed
-# Explicitly install variable inspector for JupyterLab if needed
-jupyter labextension install @lckr/jupyterlab_variableinspector || true
