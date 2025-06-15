@@ -10,5 +10,6 @@ install.packages("psych")
 install.packages("clipr")
 install.packages("DescTools") 
 install.packages("ineq") 
+install.packages("ggplot2")
 
  
