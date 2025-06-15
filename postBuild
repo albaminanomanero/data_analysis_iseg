@@ -6,6 +6,7 @@ pip install nbgitpuller
 pip install lckr_jupyterlab_variableinspector
 pip install ipywidgets
 pip install notebook==6.4.12
+pip install variable_inspector
 
 # Enable nbgitpuller
 jupyter server extension enable --sys-prefix nbgitpuller
