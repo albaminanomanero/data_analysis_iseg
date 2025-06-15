@@ -10,4 +10,5 @@ pip install variable_inspector
 
 # Enable nbgitpuller
 jupyter server extension enable --sys-prefix nbgitpuller
+jupyter contrib extension install --sys-prefix nbextension
 jupyter nbextension enable varInspector/main
