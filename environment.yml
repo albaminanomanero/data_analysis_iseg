@@ -1,6 +1,7 @@
 name: data_analysis_iseg
 channels:
   - conda-forge
+  - bioconda 
 dependencies:
   - r-base
   - r-irkernel
