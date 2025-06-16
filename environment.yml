@@ -15,7 +15,6 @@ dependencies:
   - r-readr
   - r-readxl
   - r-repr
-  - r-mnort
   - r-psych
   - lckr_jupyterlab_variableinspector
   - r-devtools
