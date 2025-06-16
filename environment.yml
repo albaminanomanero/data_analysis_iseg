@@ -17,3 +17,4 @@ dependencies:
   - r-readxl
   - r-repr
   - lckr_jupyterlab_variableinspector
+  - r-psych
