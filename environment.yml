@@ -1,7 +1,8 @@
 name: data_analysis_iseg
 channels:
   - conda-forge
-  - bioconda 
+  - bioconda
+  - defaults
 dependencies:
   - r-base
   - r-irkernel
@@ -10,11 +11,17 @@ dependencies:
   - notebook
   - jupyterlab
   - ipykernel
-  - r-readr
-  - r-readxl
   - ipywidgets
   - r-readr
   - r-readxl
   - r-repr
-  - lckr_jupyterlab_variableinspector
+  - r-mnort
   - r-psych
+  - lckr_jupyterlab_variableinspector
+  - r-devtools
+  - r-jsonlite
+  - r-knitr
+  - r-ggplot2
+  - r-clipr
+  - r-desctools
+  - r-ineq
